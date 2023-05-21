@@ -10,5 +10,9 @@ import { events } from '../Data/Events';
 export class EventCardComponent {
    staticData = events ; 
 
+   constructor()
+   {
+    
+   }
 
 }
