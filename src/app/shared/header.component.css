@@ -1,0 +1,19 @@
+.search  {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.line {
+    border: none;
+  height: 3px;
+  background-color: #00ADB5 ; 
+}
+.bottomHandMade
+{
+    bottom: 0.150rem;
+    
+}
+.placement 
+{
+    margin-bottom: -0.30rem;
+}

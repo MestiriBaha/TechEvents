@@ -1,0 +1,19 @@
+<div class="max-w-md bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+    <div class="p-5">
+      <h5 class="mb-2 text-xl text-center font-bold tracking-tight text-gray-900 dark:text-white">
+        {{event?.name}}
+      </h5>
+      <p class="mb-4 font-light text-gray-700 dark:text-gray-400">
+        Event Date: {{event?.date}}<br>
+        Time: {{event?.time}}
+        <span [ngClass]="{ colorized: event?.time === '8:00 am' }" [ngSwitch]="event?.time">
+          <span *ngSwitchCase="'8:00 am'">(Early start)</span>
+          <span *ngSwitchCase="'10:00 am'">(late start)</span>
+          <span *ngSwitchDefault>(Normal Start)</span>
+        </span><br>
+        Price: {{event?.price}}<br>
+        <span *ngIf="event?.location?.city">Location: {{event?.location?.city}}</span>
+      </p>
+    </div>
+  </div>
+  
