@@ -15,6 +15,10 @@ export class EventServiceService {
   {
     return events.find(event => event.id===id)
   }
+  getEvents()
+  {
+    return events ; 
+  }
 
   constructor() { }
 }

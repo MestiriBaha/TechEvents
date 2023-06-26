@@ -9,26 +9,21 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './event-card.component.html',
   styleUrls: ['./event-card.component.css']
 })
-export class EventCardComponent implements OnInit {
+export class EventCardComponent  {
   constructor(private toastr: ToastrService)
    {
     //private eventService : EventServiceService
    }
+   
+   buttonClicked: boolean = false;
   staticData = events ; 
-  @Output() clicked = new EventEmitter<Boolean>() ; 
    ReadMore()
    {
-    this.clicked.emit(true)
+    this.buttonClicked = true;
+    console.log(this.buttonClicked)
+
    }
    
-   ngOnInit(): void {
-    
-    
-    
-     
-
-     
-   }
    
 
 

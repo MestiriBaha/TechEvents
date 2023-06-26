@@ -13,6 +13,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { EventDetailComponent } from './Events/event-detail.component';
 import { RouterModule } from '@angular/router';
 import { appRoutes } from './routes';
+import {PanelModule} from 'primeng/panel' ; 
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { appRoutes } from './routes';
   ],
   imports: [
     RouterModule.forRoot(appRoutes),
-    BrowserModule
+    BrowserModule,
+    PanelModule
   ],
   providers: [
     EventServiceService,
